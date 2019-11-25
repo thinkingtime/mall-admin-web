@@ -2,7 +2,7 @@
   <el-card class="form-container" shadow="never">
     <el-steps :active="active" finish-status="success" align-center>
       <el-step title="填写商品信息"></el-step>
-      <el-step title="填写商品促销"></el-step>
+<!--      <el-step title="填写商品促销"></el-step>-->
       <el-step title="填写商品属性"></el-step>
       <el-step title="选择商品关联"></el-step>
     </el-steps>
@@ -12,22 +12,23 @@
       :is-edit="isEdit"
       @nextStep="nextStep">
     </product-info-detail>
-    <product-sale-detail
+<!--    <product-sale-detail-->
+<!--      v-show="showStatus[1]"-->
+<!--      v-model="productParam"-->
+<!--      :is-edit="isEdit"-->
+<!--      @nextStep="nextStep"-->
+<!--      @prevStep="prevStep">-->
+<!--    </product-sale-detail>-->
+    <product-attr-detail
       v-show="showStatus[1]"
       v-model="productParam"
       :is-edit="isEdit"
       @nextStep="nextStep"
       @prevStep="prevStep">
-    </product-sale-detail>
-    <product-attr-detail
-      v-show="showStatus[2]"
-      v-model="productParam"
-      :is-edit="isEdit"
-      @nextStep="nextStep"
-      @prevStep="prevStep">
+      @finishCommit="finishCommit">
     </product-attr-detail>
     <product-relation-detail
-      v-show="showStatus[3]"
+      v-show="showStatus[2]"
       v-model="productParam"
       :is-edit="isEdit"
       @prevStep="prevStep"
