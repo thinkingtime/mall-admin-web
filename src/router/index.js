@@ -37,78 +37,78 @@ export const constantRouterMap = [
     component: Layout,
     redirect: '/cms/product',
     name: 'cms',
-    meta: {title: '案列', icon: 'product'},
+    meta: {title: '案例', icon: 'product'},
     children: [{
       path: 'product',
       name: 'product',
       component: () => import('@/views/cms/product/index'),
-      meta: {title: '案列列表', icon: 'product-list'}
+      meta: {title: '案例列表', icon: 'product-list'}
     },
       {
         path: 'addProduct',
         name: 'addProduct',
         component: () => import('@/views/cms/product/add'),
-        meta: {title: '添加案列', icon: 'product-add'}
+        meta: {title: '添加案例', icon: 'product-add'}
       },
       {
         path: 'updateProduct',
         name: 'updateProduct',
         component: () => import('@/views/cms/product/update'),
-        meta: {title: '修改案列', icon: 'product-add'},
+        meta: {title: '修改案例', icon: 'product-add'},
         hidden: true
       },
       {
         path: 'productRecycle',
         name: 'productRecycle',
         component: () => import('@/views/cms/product/index'),
-        meta: {title: '案列回收站', icon: 'product-recycle'},
+        meta: {title: '案例回收站', icon: 'product-recycle'},
         hidden: true
       },
       {
         path: 'productCate',
         name: 'productCate',
         component: () => import('@/views/cms/productCate/index'),
-        meta: {title: '案列分类', icon: 'product-cate'}
+        meta: {title: '案例分类', icon: 'product-cate'}
       },
       {
         path: 'addProductCate',
         name: 'addProductCate',
         component: () => import('@/views/cms/productCate/add'),
-        meta: {title: '添加案列分类'},
+        meta: {title: '添加案例分类'},
         hidden: true
       },
       {
         path: 'updateProductCate',
         name: 'updateProductCate',
         component: () => import('@/views/cms/productCate/update'),
-        meta: {title: '修改案列分类'},
+        meta: {title: '修改案例分类'},
         hidden: true
       },
       {
         path: 'productAttr',
         name: 'productAttr',
         component: () => import('@/views/cms/productAttr/index'),
-        meta: {title: '案列类型', icon: 'product-attr'}
+        meta: {title: '案例类型', icon: 'product-attr'}
       },
       {
         path: 'productAttrList',
         name: 'productAttrList',
         component: () => import('@/views/cms/productAttr/productAttrList'),
-        meta: {title: '案列属性列表'},
+        meta: {title: '案例属性列表'},
         hidden: true
       },
       {
         path: 'addProductAttr',
         name: 'addProductAttr',
         component: () => import('@/views/cms/productAttr/addProductAttr'),
-        meta: {title: '添加案列属性'},
+        meta: {title: '添加案例属性'},
         hidden: true
       },
       {
         path: 'updateProductAttr',
         name: 'updateProductAttr',
         component: () => import('@/views/cms/productAttr/updateProductAttr'),
-        meta: {title: '修改案列属性'},
+        meta: {title: '修改案例属性'},
         hidden: true
       }
     ]
@@ -144,7 +144,7 @@ export const constantRouterMap = [
   //       path: 'flashProductRelation',
   //       name: 'flashProductRelation',
   //       component: () => import('@/views/sms/flash/productRelationList'),
-  //       meta: {title: '秒杀案列列表'},
+  //       meta: {title: '秒杀案例列表'},
   //       hidden:true
   //     },
   //     {

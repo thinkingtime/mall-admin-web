@@ -158,10 +158,10 @@
         this.productAttrCate.id = row.id;
       },
       getAttrList(index, row) {
-        this.$router.push({path: '/pms/productAttrList',query:{cid:row.id,cname:row.name,type:0}})
+        this.$router.push({path: '/cms/productAttrList',query:{cid:row.id,cname:row.name,type:0}})
       },
       getParamList(index, row) {
-        this.$router.push({path: '/pms/productAttrList',query:{cid:row.id,cname:row.name,type:1}})
+        this.$router.push({path: '/cms/productAttrList',query:{cid:row.id,cname:row.name,type:1}})
       },
       handleConfirm(formName){
         this.$refs[formName].validate((valid) => {

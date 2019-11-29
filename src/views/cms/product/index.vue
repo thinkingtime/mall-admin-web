@@ -481,7 +481,7 @@
         this.getList();
       },
       handleAddProduct() {
-        this.$router.push({path:'/pms/addProduct'});
+        this.$router.push({path:'/cms/addProduct'});
       },
       handleBatchOperate() {
         if(this.operateType==null){
@@ -582,7 +582,7 @@
         });
       },
       handleUpdateProduct(index,row){
-        this.$router.push({path:'/pms/updateProduct',query:{id:row.id}});
+        this.$router.push({path:'/cms/updateProduct',query:{id:row.id}});
       },
       handleShowProduct(index,row){
         console.log("handleShowProduct",row);
